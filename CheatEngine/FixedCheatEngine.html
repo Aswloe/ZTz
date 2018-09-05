@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>ZTzPaZz | Official Website</title>
+    <link rel="icon" type="image/png" href="../img/zFy.png" sizes="16x16">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uparrow;</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="topnav" id="myTopnav">
+        <a class="left" href="../index.html">Home</a>
+        <a class="active" href="../download.html">Download</a>
+        <a href="../about.html">About</a>
+        <a href="../changelog.html">Change Log</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <main>
+        <div class="download-section parallax download-section-secondary">
+            <div class="download-section-inside">
+
+                <div id="Trainer" style="overflow-x:auto;" class="download-tabcontent">
+                    <table id="customers">
+                        <h1>Fixed Engine v4</h1>
+                        <img id="myImg" src="../img/CheatEngine.png" alt="Fixed Engine v4" class="" width="126" height="126">
+                        <p>
+                            <strong>ZTzTopia</strong> - Fixed Engine is a program that can be opened in windows, helping you to more easily modify Grow*op*a. Not only that Fixed Engine can run without detection system Grow*op*a against Fixed Engine!.
+                        </p>
+                        <strong>Screenshot:</strong>
+                        <ul>
+                        <img id="myImg2" src="../img/CheatEngine2.png" alt="Fixed Engine v4" class="" style="margin-bottom:4px; width:50%;">
+                        <img id="myImg3" src="../img/CheatEngine3.png" alt="Fixed Engine v4" class="" style="margin-bottom:4px; width:50%;">
+                        </ul>
+                        <strong>Download:</strong>
+                        <ul>
+                            <li style="margin-bottom:5px;"><strong>Fixed Engine v4<br>
+                                [<a title="Size : 14.016 KB" class="link" href="" rel="nofollow" target="_blank">Zippyshare</a>]</strong><p></p>
+                                <div style="margin-top:3px;"><strong>Status : <span style="color: #38761d;">Tested</span></strong> (Windows 10)</div>
+                            </li>
+                        </ul>
+                        <p>
+                        <strong>How to download:</strong>
+                        </p>
+                        <ol>
+                            <li>Download Cheat Fixed Engine v4</li>
+                            <li>Extract Fixed Engine v4</li>
+                            <li>Open the extracted folder, copy all file inside folder (CTRL+C)</li>
+                            <li>Open Cheat Engine folders</li>
+                            <li>Paste (CTRL+V)</li>
+                            <li>If it is already, run the application</li>
+                            <li>Good luck!</li>
+                        </ol>
+                    </table>
+                </div>
+</main>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the images
+var img = document.getElementById('myImg');
+var img2 = document.getElementById('myImg2');
+var img3 = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+//handle click for myImg1
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+//handle click for myImg2
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+//handle click for myImg3
+img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+    <!-- features section -->
+    <div class="site-section">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>Spread the love</h2>
+            </div>
+
+            <div class="feature-box">
+                <img src="../img/like.png" alt="Easy to Use">
+                <h5>Easy to Use</h5>
+                <p></p>
+            </div>
+
+            <div class="feature-box">
+                <img src="../img/faces.png" alt="Fun to Use">
+                <h5>Fun to Use</h5>
+                <p></p>
+            </div>
+
+            <div class="feature-box">
+                <img src="../img/heart.png" alt="You'll Love It">
+                <h5>You'll Love It</h5>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- the footer -->
+    <footer>
+        <img src="../img/zFy.png" alt="Footer Logo">
+        <span>ZTzPaZz
+            <br>Copyright &copy; ZTzTopia 2018 All Rights Reserved.</span>
+    </footer>
+
+    </body>
+</html>

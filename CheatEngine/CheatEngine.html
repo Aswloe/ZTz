@@ -1,0 +1,202 @@
+<html>
+
+<head>
+    <title>ZTzPaZz | Official Website</title>
+    <link rel="icon" type="image/png" href="../img/zFy.png" sizes="16x16">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uparrow;</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="topnav" id="myTopnav">
+        <a class="left" href="../index.html">Home</a>
+        <a class="active" href="../download.html">Download</a>
+        <a href="../about.html">About</a>
+        <a href="../changelog.html">Change Log</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <main>
+        <div class="download-section parallax download-section-secondary">
+            <div class="download-section-inside">
+
+                <div id="Trainer" style="overflow-x:auto;" class="download-tabcontent">
+                    <table id="customers">
+                        <h1>Cheat Engine v6.8.1</h1>
+                        <img id="myImg" src="../img/CheatEngine.png" alt="Cheat Engine v6.8.1" class="" width="126" height="126">
+                        <p>
+                            <strong>ZTzTopia</strong> - Cheat Engine is an open source tool designed to help you with modifying single player games running under window so you can make them harder or easier depending on your preference(e.g: Find that 100hp is too easy, try playing a game with a max of 1 HP), but also contains other usefull tools to help debugging games and even normal applications, and helps you protect your system by letting you inspect memory modifications by backdoors and even contains some ways to unhide them from conventional means.
+                        </p>
+                        <p>
+                            It comes with a memory scanner to quickly scan for variables used within a game and allow you to change them, but it also comes with a debugger, disassembler, assembler, speedhack, trainer maker, direct 3D manipulation tools, system inspection tools and more.
+                        </p>
+                        <strong>Screenshot:</strong>
+                        <ul>
+                        <img id="myImg2" src="../img/CheatEngine2.png" alt="Cheat Engine v6.8.1" class="" style="margin-bottom:4px; width:50%;">
+                        <img id="myImg3" src="../img/CheatEngine3.png" alt="Cheat Engine v6.8.1" class="" style="margin-bottom:4px; width:50%;">
+                        </ul>
+                        <strong>Fixes:</strong>
+                        <ul>
+                            <li>Fixed several issues with the structure compare</li>
+                            <li>Fixed the commonality scanner from picking up unrelated registers for comparison</li>
+                            <li>Fixed speedhack hotkeys</li>
+                            <li>Fixed ultimap 1</li>
+                            <li>Fixed a bunch of random access violations</li>
+                            <li>Fixed Lua dissectCode.getStringReferences now also returns the string</li>
+                            <li>Fixed Lua breakpoints that specify a specific function</li>
+                            <li>Fixed Lua toAddress when the 2nd parameter is an address</li>
+                            <li>Fixed assembling xmm,m32</li>
+                            <li>Fixed issue when disassembling AVX instructions</li>
+                            <li>Fixed rightclicking r8-r9 in the registers window</li>
+                            <li>Fixed the plugin system for DBVM</li>
+                            <li>Fixed DBVM memory allocations when smaller than 4KB</li>
+                            <br>
+                            <li><strong>Additions and changes:</strong></li>
+                            <li>Added translation strings for the all type settings</li>
+                            <li>You can now drop files into the auto assembler</li>
+                            <li>auto assembler commands allocnx (allocate no execute) and allocxo (allocate execute only)</li>
+                            <li>The memoryview windows's hexadecimalview now shows the allocationbase as well, and can be doubleclicked to go there</li>
+                            <li>Added support for mono dll's that do not export g_free</li>
+                            <li>Changed "make page writable" to multiple options</li>
+                            <li>Improved DBVM speed slightly</li>
+                            <br>
+                            <li><strong>Lua:</strong></li>
+                            <li>added RemoteThread class object</li>
+                        </ul>
+                        <strong>Download:</strong>
+                        <ul>
+                            <li style="margin-bottom:5px;"><strong>Cheat Engine v6.8.1<br>
+                                [<a title="Size : 14.016 KB" class="link" href="" rel="nofollow" target="_blank">Zippyshare</a>]</strong><p></p>
+                                <div style="margin-top:3px;"><strong>Status : <span style="color: #38761d;">Tested</span></strong> (Windows 10)</div>
+                            </li>
+                        </ul>
+                        <p>
+                        <strong>How to download:</strong>
+                        </p>
+                        <ol>
+                            <li>Download Cheat Engine v6.8.1</li>
+                            <li>then run setup.exe</li>
+                            <li>Install as usual until it's finished</li>
+                            <li>If it is already, run the application</li>
+                            <li>Good luck!</li>
+                        </ol>
+                    </table>
+                </div>
+</main>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the images
+var img = document.getElementById('myImg');
+var img2 = document.getElementById('myImg2');
+var img3 = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+//handle click for myImg1
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+//handle click for myImg2
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+//handle click for myImg3
+img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+    <!-- features section -->
+    <div class="site-section">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>Spread the love</h2>
+            </div>
+
+            <div class="feature-box">
+                <img src="../img/like.png" alt="Easy to Use">
+                <h5>Easy to Use</h5>
+                <p></p>
+            </div>
+
+            <div class="feature-box">
+                <img src="../img/faces.png" alt="Fun to Use">
+                <h5>Fun to Use</h5>
+                <p></p>
+            </div>
+
+            <div class="feature-box">
+                <img src="../img/heart.png" alt="You'll Love It">
+                <h5>You'll Love It</h5>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- the footer -->
+    <footer>
+        <img src="../img/zFy.png" alt="Footer Logo">
+        <span>ZTzPaZz
+            <br>Copyright &copy; ZTzTopia 2018 All Rights Reserved.</span>
+    </footer>
+
+    </body>
+</html>

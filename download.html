@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>ZTzPaZz | Official Website</title>
+    <link rel="icon" type="image/png" href="img/zFy.png" sizes="16x16">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&uparrow;</button>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <div class="topnav" id="myTopnav">
+        <a class="left" href="index.html">Home</a>
+        <a class="active" href="download.html">Download</a>
+        <a href="about.html">About</a>
+        <a href="changelog.html">Change Log</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <main>
+        <div class="site-section parallax site-section-secondary">
+            <div class="site-section-inside">
+
+                <div class="tab">
+                    <a href="#!Trainer">
+                        <button class="tablinks" onclick="openTab(event, 'Trainer')" id="defaultOpen">Trainer</button>
+                    </a>
+                    <a href="#!CE">
+                        <button class="tablinks" onclick="openTab(event, 'CE')">Cheat Engine</button>
+                    </a>
+                </div>
+
+                <div id="Trainer" style="overflow-x:auto;" class="tabcontent">
+                    <table id="customers">
+                        <h2>Trainer</h2>
+                        <div class="row">
+                            <div class="column">
+                                <div class="content">
+                                    <img id="myImg" src="img/sky.jpg" alt="ZTzPaZz v2.93" style="width:98%">
+                                    <h4>
+                                        <a class="link" href="" target="_blank">ZTzPaZz v1.0</a>
+                                    </h4>
+                                    <p>Growtopia Version 2.93, 80+ Hacks, 64Bit, PC/Laptop</p>
+                                </div>
+                            </div>
+                        </div>
+                    </table>
+                </div>
+                <div id="CE" style="overflow-x:auto;" class="tabcontent">
+                    <h2>Trainer</h2>
+                    <div class="row">
+                        <div class="column">
+                            <div class="content">
+                                <img id="myImg2" src="img/CheatEngine.png" alt="Cheat Engine v6.8.1" style="width:55%">
+                                <h4>
+                                    <a class="link" href="CheatEngine/CheatEngine.html" target="_blank">Cheat Engine v6.8.1</a>
+                                </h4>
+                                <p>Easy to find opcode and making trainer for a game.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="content">
+                                <img id="myImg3" src="img/Zip.jpg" alt="Fixed Cheat Engine v4" style="width:92%">
+                                <h4>
+                                    <a class="link" href="CheatEngine/FixedCheatEngine.html" target="_blank">Fixed Cheat Engine v4</a>
+                                </h4>
+                                <p>There is no detection when opening Grow*op*a.</p>
+                            </div>
+                        </div>
+                        </table>
+                    </div>
+
+                    <script>
+                        function openTab(evt, TabName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(TabName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+                    </script>
+    </main>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  
+  <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the images
+var img = document.getElementById('myImg');
+var img2 = document.getElementById('myImg2');
+var img3 = document.getElementById('myImg3');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+//handle click for myImg1
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+//handle click for myImg2
+img2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+//handle click for myImg3
+img3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+</script>
+
+    <!-- features section -->
+    <div class="site-section">
+        <div class="site-section-inside">
+
+            <div class="section-header">
+                <h2>Spread the love</h2>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/like.png" alt="Easy to Use">
+                <h5>Easy to Use</h5>
+                <p></p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/faces.png" alt="Fun to Use">
+                <h5>Fun to Use</h5>
+                <p></p>
+            </div>
+
+            <div class="feature-box">
+                <img src="img/heart.png" alt="You'll Love It">
+                <h5>You'll Love It</h5>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- the footer -->
+    <footer>
+        <img src="img/zFy.png" alt="Footer Logo">
+        <span>ZTzPaZz
+            <br>Copyright &copy; ZTzTopia 2018 All Rights Reserved.</span>
+    </footer>
+
+    </body>
+</html>

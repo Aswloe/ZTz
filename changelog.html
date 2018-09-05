@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>ZTzPaZz | Official Website</title>
+    <link rel="icon" type="image/png" href="img/zFy.png" sizes="16x16">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&uparrow;</button>
+
+        <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+        <div class="topnav" id="myTopnav">
+                <a class="left" href="index.html">Home</a>
+                <a href="download.html">Download</a>
+                <a href="about.html">About</a>
+                <a class="active" href="changelog.html">Change Log</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+        
+          <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            </script>
+
+    <main>
+            <div class="site-section parallax site-section-secondary">
+                    <div class="site-section-inside">
+            
+                        <div class="section-header">
+                            <h2>ZTzPaZz Changelog</h2>
+                        </div>
+
+<div class="commands-box">
+
+<h2>Website Changed</h2>
+<pre class="commands-content">
+- New Design Website :)
+- New Download Design
+- New Background :D
+</div>
+
+    </main>
+
+       <!-- features section -->
+       <div class="site-section">
+            <div class="site-section-inside">
+    
+                <div class="section-header">
+                    <h2>Spread the love</h2>
+                </div>
+    
+                <div class="feature-box">
+                    <img src="img/like.png" alt="Easy to Use">
+                    <h5>Easy to Use</h5>
+                    <p></p>
+                </div>
+    
+                <div class="feature-box">
+                    <img src="img/faces.png" alt="Fun to Use">
+                    <h5>Fun to Use</h5>
+                    <p></p>
+                </div>
+    
+                <div class="feature-box">
+                    <img src="img/heart.png" alt="You'll Love It">
+                    <h5>You'll Love It</h5>
+                    <p></p>
+                </div>
+    
+            </div>
+            </div>
+    
+        <!-- the footer -->
+        <footer>
+            <img src="img/zFy.png" alt="Footer Logo">
+            <span>ZTzPaZz<br>Copyright &copy; ZTzTopia 2018 All Rights Reserved.</span>
+        </footer>
+
+</body>
+</html>
